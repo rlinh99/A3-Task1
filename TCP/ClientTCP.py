@@ -1,6 +1,7 @@
 from socket import *
 from datetime import *
 from subprocess import *
+
 server_name = 'localhost'
 server_port = 50007
 
@@ -10,11 +11,19 @@ soc.connect((server_name, server_port))
 try:
     start_time = datetime.now()
     soc.send("get_time".encode())
-    response = soc.recv(4096)
+    data_encoded = soc.recv(4096)
     end_time = datetime.now()
 
-    offset = end_time - start_time
+    response = data_encoded.decode()
 
-    print(response.decode())
+    offset = (end_time - start_time) / 2
+    result = datetime.strptime(response, '%Y-%m-%d %H:%M:%S.%f') + offset
+
+    print("Request sent at: {0}".format(start_time))
+    print("Reply received at : {0}".format(end_time))
+    print("Offset (RTT/2) is {0}".format(offset))
+
+    # subprocess.run(["date", "-s", str(result)])
+    print("Time is set to: {0}".format(str(result)))
 finally:
     soc.close()
