@@ -8,16 +8,19 @@ server_port = 50007
 with socket(AF_INET, SOCK_DGRAM) as soc:
     # bind UDL socket with address and port
     soc.bind((server_name, server_port))
-    while True:
-        # UDP socket waiting to receive message from outside world
-        print('Waiting to receive message')
-        data, address = soc.recvfrom(4096)
+    try:
+        while True:
+            # UDP socket waiting to receive message from outside world
+            print('Waiting to receive message')
+            data, address = soc.recvfrom(4096)
 
-        # print debug message
-        print(len(data), address)
-        print(data)
+            # print debug message
+            print(len(data), address)
+            print(data)
 
-        # validate received message. send response thereafter
-        if data.decode() == "get_time":
-            sent = soc.sendto(str(datetime.datetime.now()).encode(), address)
-            print("Data sent!")
+            # validate received message. send response thereafter
+            if data.decode() == "get_time":
+                sent = soc.sendto(str(datetime.datetime.now()).encode(), address)
+                print("Data sent!")
+    finally:
+        soc.close()

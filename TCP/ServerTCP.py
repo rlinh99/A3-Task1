@@ -12,19 +12,21 @@ soc.bind((server_name, server_port))
 # listening to incoming TCP requests.
 soc.listen(5)
 
-while True:
-    # accept connections socket from outside
-    (client_socket, address) = soc.accept()
-    try:
-        # receive message from accepted socket
-        request = client_socket.recv(1024)
-        print("Received")
-        # validate received request
-        if str(request.decode()) == 'get_time':
-            print("test")
-            # send server's current time as response
-            response = datetime.datetime.now()
-            client_socket.send(str(response).encode())
-    finally:
-        client_socket.close()
-    # in this case, we'll pretend this is a threaded server
+try:
+    while True:
+        # accept connections socket from outside
+        (client_socket, address) = soc.accept()
+        try:
+            # receive message from accepted socket
+            request = client_socket.recv(1024)
+            print("Received")
+            # validate received request
+            if str(request.decode()) == 'get_time':
+                print("test")
+                # send server's current time as response
+                response = datetime.datetime.now()
+                client_socket.send(str(response).encode())
+        finally:
+            client_socket.close()
+finally:
+    soc.close()
