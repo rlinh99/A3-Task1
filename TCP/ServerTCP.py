@@ -22,7 +22,6 @@ try:
             print("Received")
             # validate received request
             if str(request.decode()) == 'get_time':
-                print("test")
                 # send server's current time as response
                 response = datetime.datetime.now()
                 client_socket.send(str(response).encode())

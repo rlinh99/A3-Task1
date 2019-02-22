@@ -11,18 +11,18 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Q3_Task1$ClientUDP.coverage" NAME="ClientUDP Coverage Results" MODIFIED="1550462197835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDP" />
     <SUITE FILE_PATH="coverage/Q3_Task1$ClientTCP.coverage" NAME="ClientTCP Coverage Results" MODIFIED="1550464796497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TCP" />
-    <SUITE FILE_PATH="coverage/A3_Task1$ServerTCP.coverage" NAME="ServerTCP Coverage Results" MODIFIED="1550737465464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TCP" />
+    <SUITE FILE_PATH="coverage/A3_Task1$ServerTCP.coverage" NAME="ServerTCP Coverage Results" MODIFIED="1550808365642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TCP" />
     <SUITE FILE_PATH="coverage/Q3_Task1$ServerTCP.coverage" NAME="ServerTCP Coverage Results" MODIFIED="1550464795442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TCP" />
-    <SUITE FILE_PATH="coverage/A3_Task1$ServerUDP.coverage" NAME="ServerUDP Coverage Results" MODIFIED="1550732715048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDP" />
+    <SUITE FILE_PATH="coverage/A3_Task1$ServerUDP.coverage" NAME="ServerUDP Coverage Results" MODIFIED="1550808357281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDP" />
     <SUITE FILE_PATH="coverage/Q3_Task1$ServerUDP.coverage" NAME="ServerUDP Coverage Results" MODIFIED="1550446847225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UDP" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TCP/ServerTCP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="480">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TCP/ClientTCP.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="760">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -45,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UDP/ClientUDP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
+            <state relative-caret-position="580">
               <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UDP/ServerUDP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="160">
+              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -83,8 +83,8 @@
       <list>
         <option value="$PROJECT_DIR$/UDP/ClientUDP.py" />
         <option value="$PROJECT_DIR$/TCP/ClientTCP.py" />
-        <option value="$PROJECT_DIR$/TCP/ServerTCP.py" />
         <option value="$PROJECT_DIR$/UDP/ServerUDP.py" />
+        <option value="$PROJECT_DIR$/TCP/ServerTCP.py" />
       </list>
     </option>
   </component>
@@ -256,12 +256,12 @@
       <workItem from="1550540544827" duration="1247000" />
       <workItem from="1550649854131" duration="1541000" />
       <workItem from="1550732125016" duration="4360000" />
-      <workItem from="1550804247149" duration="1359000" />
+      <workItem from="1550804247149" duration="3384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26889000" />
+    <option name="totallyTimeSpent" value="28914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -272,7 +272,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32696176" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32696176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -294,10 +294,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TCP/ClientTCP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UDP/ServerUDP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="160">
+          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -306,7 +316,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UDP/ClientUDP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
+        <state relative-caret-position="580">
           <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -316,18 +326,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TCP/ServerTCP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TCP/ClientTCP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="480">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
